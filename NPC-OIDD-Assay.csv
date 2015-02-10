@@ -1,0 +1,51 @@
+OIDD_ID,NAME,METHOD,TECHNOLOGY,PROJECT,SUBPROJECT,CELL_LINE,CELL_LINE_DESCRIPTION,ROLE,RESULT_TYPE,DESIRED_RESULT,SCREENING_THRESHOLD
+1,VEGF_ADSC\ECFC Angio CD31 TubeArea,Biochemical Whole Cell,Cell ELISA,Anti-Angiogenesis,NA,ADSC\ECFC,ADSC\ECFC[PD2]:Whole Cell h,screen,%Inhib,active,>40
+2,VEGF_ADSC\ECFC Angio CD31 TubeArea,Biochemcial Whole Cell - Angiogenesis,Cell ELISA,Anti-Angiogenesis,NA,ADSC\ECFC,ADSC\ECFC[PD2]:Whole Cell h,primary,IC50,active,<5
+3,VEGF_ADSC\ECFC Angio NucArea,Biochemical Whole Cell,Cell ELISA,Anti-Angiogenesis,NA,ADSC\ECFC,ADSC\ECFC[PD2]:Whole Cell h,primary,IC50,inactive,>10
+4,WntCondMedia_bCateninfluor/nucareaC2C12,Biochemcial Whole Cell - Osteogenesis,Fluorescence Imaging,Wnt Pathway,NA,C2C12,C2C12[PD2]:Whole Cell m,screen,%Stim,active,>40
+5,WntCondMedia_bCatenin C2C12,Biochemcial Whole Cell - Osteogenesis,Fluorescence Imaging,Wnt Pathway,NA,C2C12,C2C12[PD2]:Whole Cell m,primary,EC50,active,<5
+6,WntCondMedia_Alk Phos C2C12,Biochemcial Whole Cell - Osteogenesis,Fluorescence Imaging,Wnt Pathway,NA,C2C12,C2C12[PD2]:Whole Cell m,primary,EC50,active,<5
+7,5mMGluc_INS1E InsulinRelease 40mMGluc,Secretion Modulation,Alpha Screen,Insulin Secretion,NA,INS1E,INS1E[PD2]:Whole Cell r,screen,%Stim,active,>20
+8,5mMGluc_INS1E SecretionMod,Secretion Modulation,Alpha Screen,Insulin Secretion,NA,INS1E,INS1E[PD2]:Whole Cell r,primary,EC50,active,<5
+9,0.1mMGluc_INS1E SecretionMod Act,Secretion Modulation,Alpha Screen,Insulin Secretion,NA,INS1E,INS1E[PD2]:Whole Cell r,primary,EC50,inactive,>5
+10,0.1mMGluc_INS1E FluxOR,Ion Channel Modulation,FluxOR,Insulin Secretion,NA,INS1E,INS1E[PD2]:Whole Cell r,confirmatory,IC50,inactive,>5
+11,hNCI-H716 GLP1 Secretion,Secretion Modulation,AlphaLISA,GLP-1 Secretion,NA,NCI-H716,NCI-H716[PD2]:Whole Cell h,screen,%Stim,active,>20
+12,hNCI-H716 GLP1 Secretion,Secretion Modulation,AlphaLISA,GLP-1 Secretion,NA,NCI-H716,NCI-H716[PD2]:Whole Cell h,primary,EC50,active,<5
+13,mSTC-1 GLP1 Secretion,Secretion Modulation,AlphaLISA,GLP-1 Secretion,NA,STC-1,STC-1[PD2]:Whole Cell m,profiling,EC50,active,<5
+14,Hela CellCycMod PI 2N,Cell Cycle Modulation,Fluorescence Imaging,CellCycle G2/M,NA,HeLa,HeLa[PD2]:Whole Cell h,profiling,IC50,inactive,>5
+15,Hela CellCycMod PI S Phase,Whole Cell Enzyme Modulation,Fluorescence Imaging,CellCycle G2/M,NA,HeLa,HeLa[PD2]:Whole Cell h,profiling,EC50,inactive,>5
+16,Hela CellCycMod PI 4N,Cell Cycle Modulation,Fluorescence Imaging,CellCycle G2/M,NA,HeLa,HeLa[PD2]:Whole Cell h,primary,EC50,inactive,>5
+17,Hela CellCycMod PI MI,Cell Cycle Modulation,Fluorescence Imaging,CellCycle G2/M,NA,HeLa,HeLa[PD2]:Whole Cell h,profiling,EC50,inactive,>5
+18,Hela CellCycMod PI Cell Number,Whole Cell Enzyme Modulation,Fluorescence Imaging,CellCycle G2/M,NA,HeLa,HeLa[PD2]:Whole Cell h,profiling,IC50,inactive,>5
+19,Basal_Viability ATP DLD-1,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,NA,DLD-1,DLD-1[PD2]:Whole Cell h,screen,%Inhib,active,>50
+20,Basal_Viability ATP SW480,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,NA,SW480,SW480[PD2]:Whole Cell h,screen,%Inhib,active,>50
+21,Basal_Viability ATP HCT116,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,NA,HCT 116,HCT 116[PD2]:Whole Cell h,screen,%Inhib,active,>50
+22,GSK3b inh pretreated_Viability ATP HCT116,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,NA,HCT 116,HCT 116[PD2]:Whole Cell h,screen,%Inhib,active,>50
+23,Basal_Viability ATP DLD-1,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,KRAS-dep,DLD-1,DLD-1[PD2]:Whole Cell h,primary,IC50,active,See manuscript
+23,Basal_Viability ATP DLD-1,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,BRAF-dep,DLD-1,DLD-1[PD2]:Whole Cell h,primary,IC50,inactive,See manuscript
+23,Basal_Viability ATP DLD-1,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,Colo320-resistant,DLD-1,DLD-1[PD2]:Whole Cell h,primary,IC50,active,See manuscript
+24,Basal_Viability ATP SW480,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,KRAS-dep,SW480,SW480[PD2]:Whole Cell h,primary,IC50,active,See manuscript
+24,Basal_Viability ATP SW480,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,BRAF-dep,SW480,SW480[PD2]:Whole Cell h,primary,IC50,inactive,See manuscript
+24,Basal_Viability ATP SW480,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,Colo320-resistant,SW480,SW480[PD2]:Whole Cell h,primary,IC50,active,See manuscript
+25,Basal_Viability ATP HCT116,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,KRAS-dep,HCT 116,HCT 116[PD2]:Whole Cell h,primary,IC50,active,See manuscript
+25,Basal_Viability ATP HCT116,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,BRAF-dep,HCT 116,HCT 116[PD2]:Whole Cell h,primary,IC50,inactive,See manuscript
+25,Basal_Viability ATP HCT116,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,Colo320-resistant,HCT 116,HCT 116[PD2]:Whole Cell h,primary,IC50,active,See manuscript
+25,Basal_Viability ATP HCT116,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,Basal HCT116,HCT 116,HCT 116[PD2]:Whole Cell h,primary,IC50,active,See manuscript
+25,Basal_Viability ATP HCT116,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,Wnt-stim HCT116,HCT 116,HCT 116[PD2]:Whole Cell h,primary,IC50,inactive,See manuscript
+26,GSK3b inh pretreated_Viability ATP HCT116,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,Basal HCT116,HCT 116,HCT 116[PD2]:Whole Cell h,primary,IC50,inactive,See manuscript
+26,GSK3b inh pretreated_Viability ATP HCT116,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,Wnt-stim HCT116,HCT 116,HCT 116[PD2]:Whole Cell h,primary,IC50,active,See manuscript
+27,Basal_Viability ATP Colo 320,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,KRAS-dep,Colo 320,Colo 320[PD2]:Whole Cell h,primary,IC50,inactive,See manuscript
+27,Basal_Viability ATP Colo 320,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,BRAF-dep,Colo 320,Colo 320[PD2]:Whole Cell h,primary,IC50,inactive,See manuscript
+27,Basal_Viability ATP Colo 320,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,Colo320-resistant,Colo 320,Colo 320[PD2]:Whole Cell h,primary,IC50,inactive,See manuscript
+28,Basal_Viability ATP HT-29,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,BRAF-dep,HT-29,HT-29[PD2]:Whole Cell h,primary,IC50,active,See manuscript
+28,Basal_Viability ATP HT-29,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,Colo320-resistant,HT-29,HT-29[PD2]:Whole Cell h,primary,IC50,active,See manuscript
+29,Basal_Viability ATP RKO,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,BRAF-dep,RKO,RKO[PD2]:Whole Cell h,primary,IC50,active,See manuscript
+29,Basal_Viability ATP RKO,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,Colo320-resistant,RKO,RKO[PD2]:Whole Cell h,primary,IC50,active,See manuscript
+30,Basal_Viability ATP SNU-C1,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,KRAS-dep,SNU-C1,SNU-C1[PD2]:Whole Cell h,primary,IC50,inactive,See manuscript
+30,Basal_Viability ATP SNU-C1,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,BRAF-dep,SNU-C1,SNU-C1[PD2]:Whole Cell h,primary,IC50,inactive,See manuscript
+30,Basal_Viability ATP SNU-C1,"Cytotoxicity, Cytolethality and Cell Proliferation",Luminescence,Kras/Wnt SL,Colo320-resistant,SNU-C1,SNU-C1[PD2]:Whole Cell h,primary,IC50,active,See manuscript
+31,hp70S6K1 LANCE,Enzyme Modulation,Fluorescence resonance energy transfer (FRET),Kinase Panel,NA,,P70S6K1[PD2]: (RPS6KB1),profiling,%Inhib,inactive,<50
+32,hKDR LANCE,Enzyme Modulation,Fluorescence resonance energy transfer (FRET),Kinase Panel,NA,,KDR[PD2]: (KDR),profiling,%Inhib,inactive,<50
+33,hJAK2 LANCE,Enzyme Modulation,Fluorescence resonance energy transfer (FRET),Kinase Panel,NA,,JAK2[PD2]: (JAK2),profiling,%Inhib,inactive,<50
+34,hGSK3b LANCE,Enzyme Modulation,Fluorescence resonance energy transfer (FRET),Kinase Panel,NA,,GSK3b[PD2],profiling,%Inhib,inactive,<50
+35,hFLT3 LANCE,Enzyme Modulation,Fluorescence resonance energy transfer (FRET),Kinase Panel,NA,,FLT3[PD2],profiling,%Inhib,inactive,<50
