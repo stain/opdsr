@@ -1,0 +1,29 @@
+# DATA: npcpd2_merged.ttl,bao_vocabulary_assay.owl
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX bao: <http://www.bioassayontology.org/bao#>
+PREFIX bioassay: <http://rdf.ncbi.nlm.nih.gov/pubchem/bioassay/>
+PREFIX oidd_assay: <http://openinnovation.lilly.com/bioassay#>
+PREFIX ncats_sample: <http://rdf.ncats.nih.gov/ncgc/sample/>
+PREFIX opddr: <http://rdf.ncats.nih.gov/opddr/>
+
+SELECT
+  ?name ?oidd ?assay ?assaytype ?alabel
+WHERE
+{
+  ?oidd rdfs:label ?name .
+  ?oidd skos:exactMatch ?assay .
+  ?assay rdf:type ?assaytype .
+  GRAPH ?b {
+    ?assaytype rdfs:label ?alabel .
+    ?assaytype rdfs:subClassOf bao:BAO_0000015 .
+    FILTER(REGEX(?alabel,"binding","i"))
+  }
+}
+ORDER BY ?name
