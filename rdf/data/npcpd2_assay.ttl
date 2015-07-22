@@ -1,0 +1,135 @@
+###File written by ./Go_npcpd2_ExportRDF.sh.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+@prefix owl: <http://www.w3.org/2002/07/owl#>
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+@prefix dc: <http://purl.org/dc/elements/1.1/>
+@prefix dcterms: <http://purl.org/dc/terms/>
+@prefix foaf: <http://xmlns.com/foaf/0.1/>
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix oidd_assay: <http://openinnovation.lilly.com/bioassay#>
+@prefix ncats_sample: <http://rdf.ncats.nih.gov/ncgc/sample/>
+@prefix opddr: <http://rdf.ncats.nih.gov/opddr/>
+@prefix bao: <http://www.bioassayontology.org/bao#>
+@prefix bioassay: <http://rdf.ncbi.nlm.nih.gov/pubchem/bioassay/>
+@prefix substance: <http://rdf.ncbi.nlm.nih.gov/pubchem/substance/>
+@prefix compound: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/>
+@prefix measureg: <http://rdf.ncbi.nlm.nih.gov/pubchem/measuregroup/>
+@prefix source: <http://rdf.ncbi.nlm.nih.gov/pubchem/source/>
+@prefix descr: <http://rdf.ncbi.nlm.nih.gov/pubchem/descriptor/>
+@prefix syno: <http://rdf.ncbi.nlm.nih.gov/pubchem/synonym/>
+@prefix reference: <http://rdf.ncbi.nlm.nih.gov/pubchem/reference/>
+@prefix vocabulary: <http://rdf.ncbi.nlm.nih.gov/pubchem/vocabulary#>
+@prefix cco: <http://rdf.ebi.ac.uk/terms/chembl#>
+@prefix chembl_target: <http://rdf.ebi.ac.uk/resource/chembl/target/>
+@prefix biopax3: <http://www.biopax.org/release/biopax-level3.owl#>
+@prefix reactome: <http://identifiers.org/reactome/>
+@prefix uniprot: <http://purl.uniprot.org/uniprot/>
+
+bioassay:AID1117322 skos:exactMatch oidd_assay:29  .
+bioassay:AID1117323 skos:exactMatch oidd_assay:30  .
+bioassay:AID1117324 skos:exactMatch oidd_assay:3  .
+bioassay:AID1117325 skos:exactMatch oidd_assay:5  .
+bioassay:AID1117326 skos:exactMatch oidd_assay:4  .
+bioassay:AID1117327 skos:exactMatch oidd_assay:6  .
+bioassay:AID1117328 skos:exactMatch oidd_assay:31  .
+bioassay:AID1117329 skos:exactMatch oidd_assay:7  .
+bioassay:AID1117330 skos:exactMatch oidd_assay:28  .
+bioassay:AID1117331 skos:exactMatch oidd_assay:8  .
+bioassay:AID1117332 skos:exactMatch oidd_assay:25  .
+bioassay:AID1117333 skos:exactMatch oidd_assay:9  .
+bioassay:AID1117334 skos:exactMatch oidd_assay:27  .
+bioassay:AID1117335 skos:exactMatch oidd_assay:10  .
+bioassay:AID1117336 skos:exactMatch oidd_assay:22  .
+bioassay:AID1117337 skos:exactMatch oidd_assay:2  .
+bioassay:AID1117338 skos:exactMatch oidd_assay:24  .
+bioassay:AID1117339 skos:exactMatch oidd_assay:26  .
+bioassay:AID1117340 skos:exactMatch oidd_assay:1  .
+bioassay:AID1117341 skos:exactMatch oidd_assay:11  .
+bioassay:AID1117342 skos:exactMatch oidd_assay:21  .
+bioassay:AID1117343 skos:exactMatch oidd_assay:20  .
+bioassay:AID1117344 skos:exactMatch oidd_assay:12  .
+bioassay:AID1117345 skos:exactMatch oidd_assay:13  .
+bioassay:AID1117346 skos:exactMatch oidd_assay:19  .
+bioassay:AID1117347 skos:exactMatch oidd_assay:18  .
+bioassay:AID1117348 skos:exactMatch oidd_assay:15  .
+bioassay:AID1117349 skos:exactMatch oidd_assay:14  .
+bioassay:AID1117350 skos:exactMatch oidd_assay:17  .
+bioassay:AID1117351 skos:exactMatch oidd_assay:16  .
+bioassay:AID1117352 skos:exactMatch oidd_assay:23  .
+bioassay:AID1117353 skos:exactMatch oidd_assay:32  .
+bioassay:AID1117354 skos:exactMatch oidd_assay:33  .
+bioassay:AID1117355 skos:exactMatch oidd_assay:34  .
+bioassay:AID1117356 skos:exactMatch oidd_assay:35  .
+bioassay:AID1117350 rdfs:label "Hela CellCycMod PI MI"  .
+bioassay:AID1117327 rdfs:label "WntCondMedia_Alk Phos C2C12"  .
+bioassay:AID1117342 rdfs:label "Basal_Viability ATP HCT116"  .
+bioassay:AID1117348 rdfs:label "Hela CellCycMod PI S Phase"  .
+bioassay:AID1117334 rdfs:label "Basal_Viability ATP Colo 320"  .
+bioassay:AID1117322 rdfs:label "Basal_Viability ATP RKO"  .
+bioassay:AID1117330 rdfs:label "Basal_Viability ATP HT-29"  .
+bioassay:AID1117353 rdfs:label "hKDR LANCE"  .
+bioassay:AID1117341 rdfs:label "hNCI-H716 GLP1 Secretion"  .
+bioassay:AID1117332 rdfs:label "Basal_Viability ATP HCT116"  .
+bioassay:AID1117354 rdfs:label "hJAK2 LANCE"  .
+bioassay:AID1117356 rdfs:label "hFLT3 LANCE"  .
+bioassay:AID1117323 rdfs:label "Basal_Viability ATP SNU-C1"  .
+bioassay:AID1117352 rdfs:label "Basal_Viability ATP DLD-1"  .
+bioassay:AID1117346 rdfs:label "Basal_Viability ATP DLD-1"  .
+bioassay:AID1117329 rdfs:label "5mMGluc_INS1E InsulinRelease 40mMGluc"  .
+bioassay:AID1117326 rdfs:label "WntCondMedia_bCateninfluor/nucareaC2C12"  .
+bioassay:AID1117347 rdfs:label "Hela CellCycMod PI Cell Number"  .
+bioassay:AID1117337 rdfs:label "VEGF_ADSC\ECFC Angio CD31 TubeArea"  .
+bioassay:AID1117333 rdfs:label "0.1mMGluc_INS1E SecretionMod Act"  .
+bioassay:AID1117344 rdfs:label "hNCI-H716 GLP1 Secretion"  .
+bioassay:AID1117349 rdfs:label "Hela CellCycMod PI 2N"  .
+bioassay:AID1117331 rdfs:label "5mMGluc_INS1E SecretionMod"  .
+bioassay:AID1117328 rdfs:label "hp70S6K1 LANCE"  .
+bioassay:AID1117338 rdfs:label "Basal_Viability ATP SW480"  .
+bioassay:AID1117345 rdfs:label "mSTC-1 GLP1 Secretion"  .
+bioassay:AID1117339 rdfs:label "GSK3b inh pretreated_Viability ATP HCT116"  .
+bioassay:AID1117355 rdfs:label "hGSK3b LANCE"  .
+bioassay:AID1117351 rdfs:label "Hela CellCycMod PI 4N"  .
+bioassay:AID1117325 rdfs:label "WntCondMedia_bCatenin C2C12"  .
+bioassay:AID1117324 rdfs:label "VEGF_ADSC\ECFC Angio NucArea"  .
+bioassay:AID1117335 rdfs:label "0.1mMGluc_INS1E FluxOR"  .
+bioassay:AID1117336 rdfs:label "GSK3b inh pretreated_Viability ATP HCT116"  .
+bioassay:AID1117343 rdfs:label "Basal_Viability ATP SW480"  .
+bioassay:AID1117340 rdfs:label "VEGF_ADSC\ECFC Angio CD31 TubeArea"  .
+bioassay:AID1117332 bao:BAO_0000209  measureg:AID1117332 .
+bioassay:AID1117338 bao:BAO_0000209  measureg:AID1117338 .
+bioassay:AID1117336 bao:BAO_0000209  measureg:AID1117336 .
+bioassay:AID1117342 bao:BAO_0000209  measureg:AID1117342 .
+bioassay:AID1117355 bao:BAO_0000209  measureg:AID1117355 .
+bioassay:AID1117334 bao:BAO_0000209  measureg:AID1117334 .
+bioassay:AID1117323 bao:BAO_0000209  measureg:AID1117323 .
+bioassay:AID1117348 bao:BAO_0000209  measureg:AID1117348 .
+bioassay:AID1117331 bao:BAO_0000209  measureg:AID1117331 .
+bioassay:AID1117322 bao:BAO_0000209  measureg:AID1117322 .
+bioassay:AID1117328 bao:BAO_0000209  measureg:AID1117328 .
+bioassay:AID1117329 bao:BAO_0000209  measureg:AID1117329 .
+bioassay:AID1117356 bao:BAO_0000209  measureg:AID1117356 .
+bioassay:AID1117346 bao:BAO_0000209  measureg:AID1117346 .
+bioassay:AID1117352 bao:BAO_0000209  measureg:AID1117352 .
+bioassay:AID1117345 bao:BAO_0000209  measureg:AID1117345 .
+bioassay:AID1117330 bao:BAO_0000209  measureg:AID1117330 .
+bioassay:AID1117351 bao:BAO_0000209  measureg:AID1117351 .
+bioassay:AID1117324 bao:BAO_0000209  measureg:AID1117324 .
+bioassay:AID1117354 bao:BAO_0000209  measureg:AID1117354 .
+bioassay:AID1117350 bao:BAO_0000209  measureg:AID1117350 .
+bioassay:AID1117340 bao:BAO_0000209  measureg:AID1117340 .
+bioassay:AID1117341 bao:BAO_0000209  measureg:AID1117341 .
+bioassay:AID1117327 bao:BAO_0000209  measureg:AID1117327 .
+bioassay:AID1117335 bao:BAO_0000209  measureg:AID1117335 .
+bioassay:AID1117344 bao:BAO_0000209  measureg:AID1117344 .
+bioassay:AID1117337 bao:BAO_0000209  measureg:AID1117337 .
+bioassay:AID1117325 bao:BAO_0000209  measureg:AID1117325 .
+bioassay:AID1117353 bao:BAO_0000209  measureg:AID1117353 .
+bioassay:AID1117343 bao:BAO_0000209  measureg:AID1117343 .
+bioassay:AID1117347 bao:BAO_0000209  measureg:AID1117347 .
+bioassay:AID1117339 bao:BAO_0000209  measureg:AID1117339 .
+bioassay:AID1117333 bao:BAO_0000209  measureg:AID1117333 .
+bioassay:AID1117349 bao:BAO_0000209  measureg:AID1117349 .
+bioassay:AID1117326 bao:BAO_0000209  measureg:AID1117326 .
