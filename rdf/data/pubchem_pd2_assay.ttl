@@ -1,317 +1,245 @@
-@base <http://rdf.ncbi.nlm.nih.gov/pubchem/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-
-<bioassay/AID1117356>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "human FLT3 kinase inhibition-screen"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117356> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000031> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117355>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "human GSK3B kinase inhibition-screen"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117355> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000031> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117354>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "human JAK2 kinase inhibition-screen"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117354> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000031> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117353>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "human KDR kinase inhibition-screen"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117353> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000031> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117352>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "DLD-1 viability from Cell TiterGlo-IC50"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117352> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000030> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117351>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "Increased HeLa cells with 4N DNA content-IC50"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117351> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000030> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117350>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "Increased chromatin condensation in HeLa cells-IC50"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117350> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000030> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117349>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "Increased HeLa cells with 2N DNA content-IC50"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117349> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000030> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117348>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "Increased HeLa cells in S-phase-IC50"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117348> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000030> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117347>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "Decreased HeLa cell count-IC50"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117347> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000030> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117346>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "DLD-1 viability from Cell TiterGlo-screen"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117346> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000031> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117345>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "GLP1 secretion from STC-1 cells-IC50"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117345> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000030> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117344>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "GLP1 secretion from NCI-H716 cells-IC50"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117344> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000030> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117343>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "SW480 viability from Cell TiterGlo-screen"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117343> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000031> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117342>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "HCT116 viability from Cell TiterGlo-screen"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117342> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000031> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117341>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "GLP1 secretion from NCI-H716 cells-screen"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117341> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000031> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117340>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "VEGF stimulated ADSC/ECFC co-culture CD31-stained tube area decrease-screen"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117340> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000031> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117339>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "GSK3B-pretreated HCT116 viability from Cell TiterGlo-IC50"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117339> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000030> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117338>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "SW480 viability from Cell TiterGlo-IC50"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117338> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000030> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117337>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "VEGF stimulated ADSC/ECFC co-culture CD31-stained tube area decrease-IC50"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117337> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000030> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117336>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "GSK3B-pretreated HCT116 viability from Cell TiterGlo-screen"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117336> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000031> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117335>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "tonic K+ channel activity under 0.1 mM glucose conditions in INS-1E cells-IC50"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117335> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000030> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117334>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "Colo320 viability from Cell TiterGlo-IC50"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117334> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000030> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117333>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "insulin secretion from INS-1E cells in the presence of 0.1 mM glucose-IC50"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117333> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000030> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117332>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "HCT116 viability from Cell TiterGlo-IC50"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117332> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000030> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117331>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "insulin secretion from INS-1E cells in the presence of 5 mM glucose-IC50"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117331> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000030> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117330>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "HT-29 viability from Cell TiterGlo-IC50"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117330> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000030> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117329>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "insulin secretion from INS-1E cells in the presence of 5 mM glucose-screen"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117329> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000031> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117328>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "human p70S6K1 kinase inhibition-screen"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117328> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000031> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117327>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "alkaline phosphatase stimulation in WNT3A conditioned C2C12 cells-IC50"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117327> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000030> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117326>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "nuclear beta catenin stimulation in WNT3A conditioned C2C12 cells-screen"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117326> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000031> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117325>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "nuclear beta catenin stimulation in WNT3A conditioned C2C12 cells-IC50"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117325> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000030> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117324>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "VEGF stimulated ADSC/ECFC co-culture nuclear area decrease (viability)-IC50"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117324> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000030> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117323>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "SNU-C1 viability from Cell TiterGlo-IC50"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117323> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000030> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
-
-<bioassay/AID1117322>
-    <http://purl.org/dc/terms/source> <source/ID846> ;
-    <http://purl.org/dc/terms/title> "RKO viability from Cell TiterGlo-IC50"@en ;
-    <http://www.bioassayontology.org/bao#BAO_0000209> <measuregroup/AID1117322> ;
-    <http://www.bioassayontology.org/bao#BAO_0000210> <http://www.bioassayontology.org/bao#BAO_0000030> ;
-    a <http://www.bioassayontology.org/bao#BAO_0000015> .
-
-
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix oidd_assay: <http://openinnovation.lilly.com/bioassay#> .
+@prefix ncats_sample: <http://rdf.ncats.nih.gov/ncgc/sample/> .
+@prefix opddr: <http://rdf.ncats.nih.gov/opddr/> .
+@prefix bao: <http://www.bioassayontology.org/bao#> .
+@prefix bioassay: <http://rdf.ncbi.nlm.nih.gov/pubchem/bioassay/> .
+@prefix substance: <http://rdf.ncbi.nlm.nih.gov/pubchem/substance/> .
+@prefix compound: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
+@prefix measureg: <http://rdf.ncbi.nlm.nih.gov/pubchem/measuregroup/> .
+@prefix endpoint: <http://rdf.ncbi.nlm.nih.gov/pubchem/endpoint/> .
+@prefix source: <http://rdf.ncbi.nlm.nih.gov/pubchem/source/> .
+@prefix descr: <http://rdf.ncbi.nlm.nih.gov/pubchem/descriptor/> .
+@prefix syno: <http://rdf.ncbi.nlm.nih.gov/pubchem/synonym/> .
+@prefix reference: <http://rdf.ncbi.nlm.nih.gov/pubchem/reference/> .
+@prefix vocabulary: <http://rdf.ncbi.nlm.nih.gov/pubchem/vocabulary#> .
+@prefix cco: <http://rdf.ebi.ac.uk/terms/chembl#> .
+@prefix chembl_molecule: <http://rdf.ebi.ac.uk/resource/chembl/molecule/> .
+@prefix chembl_activity: <http://rdf.ebi.ac.uk/resource/chembl/activity/> .
+@prefix chembl_assay: <http://rdf.ebi.ac.uk/resource/chembl/assay/> .
+@prefix chembl_target: <http://rdf.ebi.ac.uk/resource/chembl/target/> .
+@prefix chembl_targetcmpt: <http://rdf.ebi.ac.uk/resource/chembl/targetcomponent/> .
+@prefix biopax3: <http://www.biopax.org/release/biopax-level3.owl#> .
+@prefix reactome: <http://identifiers.org/reactome/> .
+@prefix uniprot: <http://purl.uniprot.org/uniprot/> .
+
+
+bioassay:AID1117356
+    dcterms:source source:ID846 ;
+    dcterms:title "human FLT3 kinase inhibition-screen"@en ;
+    bao:BAO_0000209 measureg:AID1117356 ;
+    bao:BAO_0000210 bao:BAO_0000031 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117355
+    dcterms:source source:ID846 ;
+    dcterms:title "human GSK3B kinase inhibition-screen"@en ;
+    bao:BAO_0000209 measureg:AID1117355 ;
+    bao:BAO_0000210 bao:BAO_0000031 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117354
+    dcterms:source source:ID846 ;
+    dcterms:title "human JAK2 kinase inhibition-screen"@en ;
+    bao:BAO_0000209 measureg:AID1117354 ;
+    bao:BAO_0000210 bao:BAO_0000031 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117353
+    dcterms:source source:ID846 ;
+    dcterms:title "human KDR kinase inhibition-screen"@en ;
+    bao:BAO_0000209 measureg:AID1117353 ;
+    bao:BAO_0000210 bao:BAO_0000031 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117352
+    dcterms:source source:ID846 ;
+    dcterms:title "DLD-1 viability from Cell TiterGlo-IC50"@en ;
+    bao:BAO_0000209 measureg:AID1117352 ;
+    bao:BAO_0000210 bao:BAO_0000030 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117351
+    dcterms:source source:ID846 ;
+    dcterms:title "Increased HeLa cells with 4N DNA content-IC50"@en ;
+    bao:BAO_0000209 measureg:AID1117351 ;
+    bao:BAO_0000210 bao:BAO_0000030 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117350
+    dcterms:source source:ID846 ;
+    dcterms:title "Increased chromatin condensation in HeLa cells-IC50"@en ;
+    bao:BAO_0000209 measureg:AID1117350 ;
+    bao:BAO_0000210 bao:BAO_0000030 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117349
+    dcterms:source source:ID846 ;
+    dcterms:title "Increased HeLa cells with 2N DNA content-IC50"@en ;
+    bao:BAO_0000209 measureg:AID1117349 ;
+    bao:BAO_0000210 bao:BAO_0000030 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117348
+    dcterms:source source:ID846 ;
+    dcterms:title "Increased HeLa cells in S-phase-IC50"@en ;
+    bao:BAO_0000209 measureg:AID1117348 ;
+    bao:BAO_0000210 bao:BAO_0000030 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117347
+    dcterms:source source:ID846 ;
+    dcterms:title "Decreased HeLa cell count-IC50"@en ;
+    bao:BAO_0000209 measureg:AID1117347 ;
+    bao:BAO_0000210 bao:BAO_0000030 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117346
+    dcterms:source source:ID846 ;
+    dcterms:title "DLD-1 viability from Cell TiterGlo-screen"@en ;
+    bao:BAO_0000209 measureg:AID1117346 ;
+    bao:BAO_0000210 bao:BAO_0000031 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117345
+    dcterms:source source:ID846 ;
+    dcterms:title "GLP1 secretion from STC-1 cells-IC50"@en ;
+    bao:BAO_0000209 measureg:AID1117345 ;
+    bao:BAO_0000210 bao:BAO_0000030 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117344
+    dcterms:source source:ID846 ;
+    dcterms:title "GLP1 secretion from NCI-H716 cells-IC50"@en ;
+    bao:BAO_0000209 measureg:AID1117344 ;
+    bao:BAO_0000210 bao:BAO_0000030 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117343
+    dcterms:source source:ID846 ;
+    dcterms:title "SW480 viability from Cell TiterGlo-screen"@en ;
+    bao:BAO_0000209 measureg:AID1117343 ;
+    bao:BAO_0000210 bao:BAO_0000031 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117342
+    dcterms:source source:ID846 ;
+    dcterms:title "HCT116 viability from Cell TiterGlo-screen"@en ;
+    bao:BAO_0000209 measureg:AID1117342 ;
+    bao:BAO_0000210 bao:BAO_0000031 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117341
+    dcterms:source source:ID846 ;
+    dcterms:title "GLP1 secretion from NCI-H716 cells-screen"@en ;
+    bao:BAO_0000209 measureg:AID1117341 ;
+    bao:BAO_0000210 bao:BAO_0000031 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117340
+    dcterms:source source:ID846 ;
+    dcterms:title "VEGF stimulated ADSC/ECFC co-culture CD31-stained tube area decrease-screen"@en ;
+    bao:BAO_0000209 measureg:AID1117340 ;
+    bao:BAO_0000210 bao:BAO_0000031 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117339
+    dcterms:source source:ID846 ;
+    dcterms:title "GSK3B-pretreated HCT116 viability from Cell TiterGlo-IC50"@en ;
+    bao:BAO_0000209 measureg:AID1117339 ;
+    bao:BAO_0000210 bao:BAO_0000030 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117338
+    dcterms:source source:ID846 ;
+    dcterms:title "SW480 viability from Cell TiterGlo-IC50"@en ;
+    bao:BAO_0000209 measureg:AID1117338 ;
+    bao:BAO_0000210 bao:BAO_0000030 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117337
+    dcterms:source source:ID846 ;
+    dcterms:title "VEGF stimulated ADSC/ECFC co-culture CD31-stained tube area decrease-IC50"@en ;
+    bao:BAO_0000209 measureg:AID1117337 ;
+    bao:BAO_0000210 bao:BAO_0000030 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117336
+    dcterms:source source:ID846 ;
+    dcterms:title "GSK3B-pretreated HCT116 viability from Cell TiterGlo-screen"@en ;
+    bao:BAO_0000209 measureg:AID1117336 ;
+    bao:BAO_0000210 bao:BAO_0000031 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117335
+    dcterms:source source:ID846 ;
+    dcterms:title "tonic K+ channel activity under 0.1 mM glucose conditions in INS-1E cells-IC50"@en ;
+    bao:BAO_0000209 measureg:AID1117335 ;
+    bao:BAO_0000210 bao:BAO_0000030 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117334
+    dcterms:source source:ID846 ;
+    dcterms:title "Colo320 viability from Cell TiterGlo-IC50"@en ;
+    bao:BAO_0000209 measureg:AID1117334 ;
+    bao:BAO_0000210 bao:BAO_0000030 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117333
+    dcterms:source source:ID846 ;
+    dcterms:title "insulin secretion from INS-1E cells in the presence of 0.1 mM glucose-IC50"@en ;
+    bao:BAO_0000209 measureg:AID1117333 ;
+    bao:BAO_0000210 bao:BAO_0000030 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117332
+    dcterms:source source:ID846 ;
+    dcterms:title "HCT116 viability from Cell TiterGlo-IC50"@en ;
+    bao:BAO_0000209 measureg:AID1117332 ;
+    bao:BAO_0000210 bao:BAO_0000030 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117331
+    dcterms:source source:ID846 ;
+    dcterms:title "insulin secretion from INS-1E cells in the presence of 5 mM glucose-IC50"@en ;
+    bao:BAO_0000209 measureg:AID1117331 ;
+    bao:BAO_0000210 bao:BAO_0000030 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117330
+    dcterms:source source:ID846 ;
+    dcterms:title "HT-29 viability from Cell TiterGlo-IC50"@en ;
+    bao:BAO_0000209 measureg:AID1117330 ;
+    bao:BAO_0000210 bao:BAO_0000030 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117329
+    dcterms:source source:ID846 ;
+    dcterms:title "insulin secretion from INS-1E cells in the presence of 5 mM glucose-screen"@en ;
+    bao:BAO_0000209 measureg:AID1117329 ;
+    bao:BAO_0000210 bao:BAO_0000031 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117328
+    dcterms:source source:ID846 ;
+    dcterms:title "human p70S6K1 kinase inhibition-screen"@en ;
+    bao:BAO_0000209 measureg:AID1117328 ;
+    bao:BAO_0000210 bao:BAO_0000031 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117327
+    dcterms:source source:ID846 ;
+    dcterms:title "alkaline phosphatase stimulation in WNT3A conditioned C2C12 cells-IC50"@en ;
+    bao:BAO_0000209 measureg:AID1117327 ;
+    bao:BAO_0000210 bao:BAO_0000030 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117326
+    dcterms:source source:ID846 ;
+    dcterms:title "nuclear beta catenin stimulation in WNT3A conditioned C2C12 cells-screen"@en ;
+    bao:BAO_0000209 measureg:AID1117326 ;
+    bao:BAO_0000210 bao:BAO_0000031 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117325
+    dcterms:source source:ID846 ;
+    dcterms:title "nuclear beta catenin stimulation in WNT3A conditioned C2C12 cells-IC50"@en ;
+    bao:BAO_0000209 measureg:AID1117325 ;
+    bao:BAO_0000210 bao:BAO_0000030 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117324
+    dcterms:source source:ID846 ;
+    dcterms:title "VEGF stimulated ADSC/ECFC co-culture nuclear area decrease (viability)-IC50"@en ;
+    bao:BAO_0000209 measureg:AID1117324 ;
+    bao:BAO_0000210 bao:BAO_0000030 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117323
+    dcterms:source source:ID846 ;
+    dcterms:title "SNU-C1 viability from Cell TiterGlo-IC50"@en ;
+    bao:BAO_0000209 measureg:AID1117323 ;
+    bao:BAO_0000210 bao:BAO_0000030 ;
+    a bao:BAO_0000015 .
+bioassay:AID1117322
+    dcterms:source source:ID846 ;
+    dcterms:title "RKO viability from Cell TiterGlo-IC50"@en ;
+    bao:BAO_0000209 measureg:AID1117322 ;
+    bao:BAO_0000210 bao:BAO_0000030 ;
+    a bao:BAO_0000015 .
