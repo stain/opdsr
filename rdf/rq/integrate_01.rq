@@ -1,5 +1,5 @@
 ###
-# Query: Find assays classified as cell based, via substring label search for "cell".
+# Find phenotypic assays associated with ChEMBL "Caspase-1" protein target via shared active substances.
 # Ok:  9 Oct 2015
 ###
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -37,17 +37,24 @@ PREFIX reactome: <http://identifiers.org/reactome/>
 PREFIX uniprot: <http://purl.uniprot.org/uniprot/>
 
 
-#bao:BAO_0000015 is root assay type
-
-SELECT
-  ?assay ?assaytype ?alabel
+SELECT DISTINCT
+  ?target ?targetname ?assay ?assayname
 WHERE
 {
-  ?assay rdf:type ?assaytype .
-  GRAPH ?g {
-    ?assaytype rdfs:subClassOf bao:BAO_0000015 .
-    ?assaytype rdfs:label ?alabel .
-  }
-  FILTER(REGEX(?alabel,"cell","i"))
+  #phenotypic
+  ?substance obo:BFO_0000056 ?measureg .
+  ?assay bao:BAO_0000209 ?measureg .
+  ?measureg obo:OBI_0000299 ?endpoint .
+  ?endpoint obo:IAO_0000136 ?substance .
+
+  #biochemical
+  ?substance skos:exactMatch ?mol .
+  ?mol cco:hasActivity ?activity .
+  ?chembl_assay cco:hasActivity ?activity .
+  ?target cco:hasAssay ?chembl_assay .
+
+  ?target dcterms:title ?targetname .
+  FILTER (regex(?targetname, "Caspase-1", "i")) .
+  ?assay dcterms:title ?assayname .
 }
-ORDER BY ?assaytype
+ORDER BY ?assay

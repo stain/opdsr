@@ -1,4 +1,6 @@
-# DATA: npcpd2_merged.ttl,bao_vocabulary_assay.owl
+###
+# Find ChEMBL protein targets associated with OIDD "Hela Cell" phenotypic assays via shared active substances.
+###
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -17,27 +19,40 @@ PREFIX bioassay: <http://rdf.ncbi.nlm.nih.gov/pubchem/bioassay/>
 PREFIX substance: <http://rdf.ncbi.nlm.nih.gov/pubchem/substance/>
 PREFIX compound: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/>
 PREFIX measureg: <http://rdf.ncbi.nlm.nih.gov/pubchem/measuregroup/>
+PREFIX endpoint: <http://rdf.ncbi.nlm.nih.gov/pubchem/endpoint/>
 PREFIX source: <http://rdf.ncbi.nlm.nih.gov/pubchem/source/>
 PREFIX descr: <http://rdf.ncbi.nlm.nih.gov/pubchem/descriptor/>
 PREFIX syno: <http://rdf.ncbi.nlm.nih.gov/pubchem/synonym/>
 PREFIX reference: <http://rdf.ncbi.nlm.nih.gov/pubchem/reference/>
+PREFIX vocabulary: <http://rdf.ncbi.nlm.nih.gov/pubchem/vocabulary#>
 PREFIX cco: <http://rdf.ebi.ac.uk/terms/chembl#>
+PREFIX chembl_molecule: <http://rdf.ebi.ac.uk/resource/chembl/molecule/>
+PREFIX chembl_activity: <http://rdf.ebi.ac.uk/resource/chembl/activity/>
+PREFIX chembl_assay: <http://rdf.ebi.ac.uk/resource/chembl/assay/>
 PREFIX chembl_target: <http://rdf.ebi.ac.uk/resource/chembl/target/>
-PREFIX chembl_targetcomponent: <http://rdf.ebi.ac.uk/resource/chembl/targetcomponent/>
+PREFIX chembl_targetcmpt: <http://rdf.ebi.ac.uk/resource/chembl/targetcomponent/>
 PREFIX biopax3: <http://www.biopax.org/release/biopax-level3.owl#>
 PREFIX reactome: <http://identifiers.org/reactome/>
 PREFIX uniprot: <http://purl.uniprot.org/uniprot/>
 
-SELECT
-  ?substance_ncgc ?substance_pc ?compound ?target ?targetname ?uniprot
+
+SELECT DISTINCT
+  ?assay ?assayname ?target ?targetname
 WHERE
 {
-  ?substance_ncgc skos:exactMatch ?substance_pc .
-  ?substance_pc sio:CHEMINF_000477 ?compound .
-  ?compound opddr:activeOnTarget ?target .
+  ?substance obo:BFO_0000056 ?measureg .
+  ?assay bao:BAO_0000209 ?measureg .
+  ?measureg obo:OBI_0000299 ?endpoint .
+  ?endpoint obo:IAO_0000136 ?substance .
+  ?substance skos:exactMatch ?mol .
+  FILTER(REGEX(?assayname, "Hela Cell","i")) .
+  ?assay dcterms:title ?assayname .
+
+  ?mol cco:hasActivity ?activity .
+  ?chembl_assay cco:hasActivity ?activity .
+  ?target cco:hasAssay ?chembl_assay .
   ?target dcterms:title ?targetname .
-  ?target cco:targetXref ?uniprot .
-  FILTER (regex(?targetname, "Caspase", "i"))
+  ?target dcterms:title ?targetname .
+  FILTER(REGEX(?targetname, "kinase","i")) .
 }
-ORDER BY 
-  ?substance_ncgc ?target
+ORDER BY ?assay ?target
