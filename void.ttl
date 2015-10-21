@@ -1,0 +1,120 @@
+
+# FIXME: Change /master to the (to be) tagged version, e.g. /20151031
+@base <https://spotlite.nih.gov/ncats/opdsr/raw/master/rdf/data/void.ttl> .
+@prefix :      <#>  .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix pav:   <http://purl.org/pav/> .
+@prefix freq:  <http://purl.org/cld/freq/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<>      a                    void:DatasetDescription ;
+        dcterms:description  "The VoID description for the RDF representation of this dataset."@en ;
+        dcterms:title        "VoID Description"@en ;
+        pav:createdBy        <http://orcid.org/0000-0001-9842-9718> ;
+        pav:contributedBy    <http://orcid.org/0000-0002-1476-6192>
+        pav:createdOn        "2015-10-21T16:30:00.798Z"^^xsd:dateTime ;
+        dcterms:issued       "2015-10-21T16:30:00.798Z"^^xsd:dateTime ;
+        pav:createdWith      <http://voideditor.cs.man.ac.uk/>, <https://atom.io/> ;
+        foaf:primaryTopic    :oidd-dataset .
+
+
+:oidd-dataset
+        a                           void:Dataset , dctypes:Dataset ;
+        dcterms:accrualPeriodicity  "Irregular" ;
+        dcterms:description         "The OIDD Semantic Knowledge Network encodes the experimental relationship between NPC compounds and OIDD assays in a standardized format that can be exported into other databases and information sources. Similarly, it also encodes relationships between compounds and assays and among other experimental data, including ChEMBL dataset mapping and classification of assays using the bioassay ontology (BAO)."@en ;
+        dcterms:issued              "2015-10-21T00:00:00.798Z"^^xsd:dateTime ;
+        dcterms:license             <http://creativecommons.org/licenses/by-sa/3.0/> ;
+        dcterms:publisher           <https://ncats.nih.gov/> ;
+        ## FIXME: What is a good and global enough title?
+        dcterms:title               "OIDD Semantic Knowledge Network"@en ;
+        # FIXME: Who contributed how?
+        pav:createdBy               <http://orcid.org/0000-0001-7403-8819>, <http://orcid.org/0000-0002-1476-6192> ;
+        pav:curatedBy               <http://orcid.org/0000-0002-1476-6192> ;
+        pav:derivedFrom             <http://www.bioassayontology.org/bao/bao_complete.owl> ,
+          <http://rdf.ncbi.nlm.nih.gov/pubchem/void.ttl#bioassay> ,
+          <http://rdf.ncbi.nlm.nih.gov/pubchem/void.ttl#endpoint> ,
+          <http://rdf.ncbi.nlm.nih.gov/pubchem/void.ttl#substance> ,
+          <http://rdf.ebi.ac.uk/dataset/chembl/20.0/void.ttl#chembl_rdf_target_dataset>
+          <http://rdf.ebi.ac.uk/dataset/chembl/20.0/void.ttl#chembl_rdf_activity_dataset> ;
+        pav:previousVersion         <https://spotlite.nih.gov/ncats/opdsr/commits/20150209> ;
+        ## FIXME: Need version number or date?
+        pav:version                 "0.0.1" ;
+        ## FIXME: Should be to a tagged/versioned download
+        void:dataDump               <https://spotlite.nih.gov/ncats/opdsr/repository/archive.zip?ref=master> ;
+        dcat:landingPage            <https://ncats.nih.gov/expertise/preclinical/pd2#semantic> ;
+        dcat:distribution
+            :NPC-OIDD-Assay-csv,
+            :NPC-OIDD-Compound-csv,
+            :NPC-OIDD-Results-csv .
+
+
+:NPC-OIDD-Assay-csv
+        a                 dcat:Distribution ;
+        dcat:downloadURL  <../../NPC-OIDD-Assay.csv> ;
+        dcat:mediaType    "text/csv" .
+
+:NPC-OIDD-Compound-csv
+        a                 dcat:Distribution ;
+        dcat:downloadURL  <../../NPC-OIDD-Compound.csv> ;
+        dcat:mediaType    "text/csv" .
+
+:NPC-OIDD-Results-csv
+        a                 dcat:Distribution ;
+        dcat:downloadURL  <../../NPC-OIDD-Results.csv> ;
+        dcat:mediaType    "text/csv" .
+
+
+## People
+
+
+<http://orcid.org/0000-0001-9842-9718>
+        a                 foaf:Person ;
+        foaf:family_name  "Soiland-Reyes" ;
+        foaf:givenname    "Stian" ;
+        foaf:mbox         <mailto:soiland-reyes@cs.manchester.ac.uk> .
+
+<http://orcid.org/0000-0002-1476-6192>
+        a                 foaf:Person ;
+        foaf:family_name  "Yang" ;
+        foaf:givenname    "Jeremy" ;
+        foaf:mbox         <mailto:jejyang@umail.iu.edu> .
+
+
+<http://orcid.org/0000-0001-7403-8819>
+        a                 foaf:Person ;
+        foaf:name  "Rajarshi Guha" .
+
+## Cited datasets
+
+# Backlink to the void.ttl as http://rdf.ncbi.nlm.nih.gov/pubchem/void.ttl strangely
+# is only available on ftp://ftp.ncbi.nlm.nih.gov/pubchem/RDF/void.ttl
+# yet declares http resources..
+#
+# The below might confuse some consumers of this VoID file as it looks like
+# this file is declaring a second dataset, therefore the below has no typing
+<ftp://ftp.ncbi.nlm.nih.gov/pubchem/RDF/void.ttl> foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubchem/void.ttl#PubChemRDF> ;
+  void:subset <http://rdf.ncbi.nlm.nih.gov/pubchem/void.ttl#bioassay> ,
+            <http://rdf.ncbi.nlm.nih.gov/pubchem/void.ttl#endpoint> ,
+            <http://rdf.ncbi.nlm.nih.gov/pubchem/void.ttl#substance>
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/void.ttl#PubChemRDF>
+        a                    void:Dataset ;
+        dcterms:description  "PubChemRDF bioassay subset"@en ;
+        dcterms:title        "PubChem"@en ;
+        pav:version          "2013-11-18"@en ;
+        dcat:landingPage     <https://pubchem.ncbi.nlm.nih.gov/rdf/> .
+
+
+<http://www.bioassayontology.org/bao/bao_complete.owl>
+        a                    void:Dataset ;
+        dcterms:description  "The BioAssay Ontology (BAO) describes chemical biology screening assays and their results including high-throughput screening (HTS) data for the purpose of categorizing assays and data analysis"@en ;
+        dcterms:title        "BioAssay ontolog"@en ;
+        pav:version          "2.0"@en ;
+        dcat:landingPage     <http://bioassayontology.org/bioassayontology/> .
